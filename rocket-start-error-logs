@@ -1,0 +1,152 @@
+bitzsk@bitzsk-HP-ProBook-440-G5:~$ cd Rocket.Chat/
+bitzsk@bitzsk-HP-ProBook-440-G5:~/Rocket.Chat$ meteor npm i
+npm WARN read-shrinkwrap This version of npm is compatible with lockfileVersion@1, but npm-shrinkwrap.json was generated for lockfileVersion@0. I'll try to do my best with it!
+
+> Rocket.Chat@1.2.0-develop postinstall /home/bitzsk/Rocket.Chat
+> node .scripts/npm-postinstall.js
+
+Running npm-postinstall.js
+npm WARN @accounts/mongo@0.0.12 requires a peer of @accounts/common@^0.0.10 but none is installed. You must install peer dependencies yourself.
+npm WARN @accounts/mongo@0.0.12 requires a peer of @accounts/server@^0.0.10 but none is installed. You must install peer dependencies yourself.
+npm WARN @rocket.chat/eslint-config@0.3.0 requires a peer of eslint@^4.19.1 || ^5.16.0 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.7 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+audited 23939 packages in 13.29s
+found 146 vulnerabilities (15 low, 122 moderate, 9 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+bitzsk@bitzsk-HP-ProBook-440-G5:~/Rocket.Chat$ meteor
+[[[[[ ~/Rocket.Chat ]]]]]                     
+
+=> Started proxy.                             
+Browserslist: caniuse-lite is outdated. Please run next command `npm update caniuse-lite browserslist`
+WARNING: npm peer requirements (for juliancwirko:postcss) not installed:
+ - postcss@7.0.6 installed, postcss@^6.0.22 needed
+ - postcss-load-config@2.0.0 installed, postcss-load-config@^1.2.0 needed
+
+Read more about installing npm peer dependencies:
+  http://guide.meteor.com/using-packages.html#peer-npm-dependencies
+
+=> A patch (Meteor 1.8.1) for your current release is available!
+   Update this project now with 'meteor update --patch'.
+=> Started MongoDB.                           
+Browserslist: caniuse-lite is outdated. Please run next command `npm update caniuse-lite browserslist`
+W20190620-10:05:16.336(8)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+W20190620-10:05:16.394(8)? (STDERR) While this implementation will work correctly, it is known to be
+W20190620-10:05:16.394(8)? (STDERR) approximately three times slower than the native implementation.
+W20190620-10:05:16.395(8)? (STDERR) In order to use the native implementation instead, run
+W20190620-10:05:16.395(8)? (STDERR) 
+W20190620-10:05:16.395(8)? (STDERR)   meteor npm install --save bcrypt
+W20190620-10:05:16.395(8)? (STDERR) 
+W20190620-10:05:16.395(8)? (STDERR) in the root directory of your application.
+W20190620-10:05:16.395(8)? (STDERR) /home/bitzsk/.meteor/packages/meteor-tool/.1.8.0_2.1om3lwx.sy8++os.linux.x86_64+web.browser+web.browser.legacy+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280
+W20190620-10:05:16.395(8)? (STDERR) 						throw(ex);
+W20190620-10:05:16.396(8)? (STDERR) 						^
+W20190620-10:05:16.396(8)? (STDERR) 
+W20190620-10:05:16.396(8)? (STDERR) Error: Could not locate the bindings file. Tried:
+W20190620-10:05:16.396(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/sharp.node
+W20190620-10:05:16.396(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Debug/sharp.node
+W20190620-10:05:16.396(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Release/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Debug/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Debug/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Release/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Release/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/default/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/compiled/8.11.4/linux/x64/sharp.node
+W20190620-10:05:16.397(8)? (STDERR)     at bindings (/home/bitzsk/Rocket.Chat/node_modules/bindings/bindings.js:96:9)
+W20190620-10:05:16.398(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/constructor.js:10:34)
+W20190620-10:05:16.398(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:16.398(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:16.398(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:16.398(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:16.398(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:16.398(8)? (STDERR)     at Module.require (module.js:596:17)
+W20190620-10:05:16.399(8)? (STDERR)     at require (internal/module.js:11:18)
+W20190620-10:05:16.399(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/index.js:3:15)
+W20190620-10:05:16.399(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:16.399(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:16.399(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:16.399(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:16.400(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:16.400(8)? (STDERR)     at Module.require (module.js:596:17)
+=> Exited with code: 1
+W20190620-10:05:30.159(8)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+W20190620-10:05:30.160(8)? (STDERR) While this implementation will work correctly, it is known to be
+W20190620-10:05:30.160(8)? (STDERR) approximately three times slower than the native implementation.
+W20190620-10:05:30.160(8)? (STDERR) In order to use the native implementation instead, run
+W20190620-10:05:30.160(8)? (STDERR) 
+W20190620-10:05:30.160(8)? (STDERR)   meteor npm install --save bcrypt
+W20190620-10:05:30.161(8)? (STDERR) 
+W20190620-10:05:30.161(8)? (STDERR) in the root directory of your application.
+W20190620-10:05:35.215(8)? (STDERR) /home/bitzsk/.meteor/packages/meteor-tool/.1.8.0_2.1om3lwx.sy8++os.linux.x86_64+web.browser+web.browser.legacy+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280
+W20190620-10:05:35.216(8)? (STDERR) 						throw(ex);
+W20190620-10:05:35.216(8)? (STDERR) 						^
+W20190620-10:05:35.216(8)? (STDERR) 
+W20190620-10:05:35.217(8)? (STDERR) Error: Could not locate the bindings file. Tried:
+W20190620-10:05:35.217(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/sharp.node
+W20190620-10:05:35.217(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Debug/sharp.node
+W20190620-10:05:35.217(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Release/sharp.node
+W20190620-10:05:35.217(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Debug/sharp.node
+W20190620-10:05:35.217(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Debug/sharp.node
+W20190620-10:05:35.218(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Release/sharp.node
+W20190620-10:05:35.218(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Release/sharp.node
+W20190620-10:05:35.218(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/default/sharp.node
+W20190620-10:05:35.218(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/compiled/8.11.4/linux/x64/sharp.node
+W20190620-10:05:35.218(8)? (STDERR)     at bindings (/home/bitzsk/Rocket.Chat/node_modules/bindings/bindings.js:96:9)
+W20190620-10:05:35.218(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/constructor.js:10:34)
+W20190620-10:05:35.218(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:35.219(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:35.219(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:35.219(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:35.219(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:35.219(8)? (STDERR)     at Module.require (module.js:596:17)
+W20190620-10:05:35.219(8)? (STDERR)     at require (internal/module.js:11:18)
+W20190620-10:05:35.220(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/index.js:3:15)
+W20190620-10:05:35.220(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:35.220(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:35.220(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:35.220(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:35.220(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:35.220(8)? (STDERR)     at Module.require (module.js:596:17)
+=> Exited with code: 1
+W20190620-10:05:45.914(8)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+W20190620-10:05:45.915(8)? (STDERR) While this implementation will work correctly, it is known to be
+W20190620-10:05:45.915(8)? (STDERR) approximately three times slower than the native implementation.
+W20190620-10:05:45.915(8)? (STDERR) In order to use the native implementation instead, run
+W20190620-10:05:45.916(8)? (STDERR) 
+W20190620-10:05:45.916(8)? (STDERR)   meteor npm install --save bcrypt
+W20190620-10:05:45.916(8)? (STDERR) 
+W20190620-10:05:45.916(8)? (STDERR) in the root directory of your application.
+W20190620-10:05:49.691(8)? (STDERR) /home/bitzsk/.meteor/packages/meteor-tool/.1.8.0_2.1om3lwx.sy8++os.linux.x86_64+web.browser+web.browser.legacy+web.cordova/mt-os.linux.x86_64/dev_bundle/server-lib/node_modules/fibers/future.js:280
+W20190620-10:05:49.691(8)? (STDERR) 						throw(ex);
+W20190620-10:05:49.691(8)? (STDERR) 						^
+W20190620-10:05:49.691(8)? (STDERR) 
+W20190620-10:05:49.691(8)? (STDERR) Error: Could not locate the bindings file. Tried:
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Debug/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/Release/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Debug/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Debug/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/out/Release/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/Release/sharp.node
+W20190620-10:05:49.692(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/build/default/sharp.node
+W20190620-10:05:49.693(8)? (STDERR)  → /home/bitzsk/Rocket.Chat/node_modules/sharp/compiled/8.11.4/linux/x64/sharp.node
+W20190620-10:05:49.693(8)? (STDERR)     at bindings (/home/bitzsk/Rocket.Chat/node_modules/bindings/bindings.js:96:9)
+W20190620-10:05:49.693(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/constructor.js:10:34)
+W20190620-10:05:49.693(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:49.693(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:49.693(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:49.693(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:49.693(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:49.693(8)? (STDERR)     at Module.require (module.js:596:17)
+W20190620-10:05:49.694(8)? (STDERR)     at require (internal/module.js:11:18)
+W20190620-10:05:49.694(8)? (STDERR)     at Object.<anonymous> (/home/bitzsk/Rocket.Chat/node_modules/sharp/lib/index.js:3:15)
+W20190620-10:05:49.694(8)? (STDERR)     at Module._compile (module.js:652:30)
+W20190620-10:05:49.694(8)? (STDERR)     at Object.Module._extensions..js (module.js:663:10)
+W20190620-10:05:49.694(8)? (STDERR)     at Module.load (module.js:565:32)
+W20190620-10:05:49.694(8)? (STDERR)     at tryModuleLoad (module.js:505:12)
+W20190620-10:05:49.694(8)? (STDERR)     at Function.Module._load (module.js:497:3)
+W20190620-10:05:49.694(8)? (STDERR)     at Module.require (module.js:596:17)
+=> Exited with code: 1
+=> Your application is crashing. Waiting for file change.
+
